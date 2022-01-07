@@ -2,6 +2,6 @@ Build Command
 --------------
 python setup.py build
 (or)
-cxfreeze -c home_index.py --target-dir dist
+cxfreeze -c home_index.py --target-dir build
 and manually copy the plugins folder
 

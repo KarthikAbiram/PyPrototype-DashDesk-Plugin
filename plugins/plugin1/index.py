@@ -1,4 +1,8 @@
-import sys
+import sys, os
+
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
+os.chdir(dir_path)
 
 # Import app
 from app import app
@@ -21,4 +25,4 @@ from layout import layout
 app.layout = layout
 
 if __name__ == "__main__":
-    app.server.run(debug=True, port=port)
+    app.run_server(debug=False, port=port)
