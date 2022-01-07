@@ -1,7 +1,7 @@
 """ Importing dependencies """
 from reusables.check_url_alive import check_website
 from threading import Thread
-import webview
+# import webview
 import sys
 import subprocess
 import json
@@ -103,5 +103,9 @@ if __name__ == '__main__':
     t.start()
 
     """ Start the desktop application """
-    window = webview.create_window('PDMAT', home_server)
-    webview.start(debug=True)
+    # window = webview.create_window('Home', home_server)
+    # webview.start(debug=False)\
+
+    # Using Microsoft Edge App Mode
+    # Edge waits till user closes the window (while Chrome doesn't seem to wait)
+    subprocess.call(f'"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --app={home_server}')
