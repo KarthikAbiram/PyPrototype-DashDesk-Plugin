@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 dash = "*"
-pywebview = "*"
+cx-freeze = "*"
 
 [dev-packages]
 autopep8 = "*"
